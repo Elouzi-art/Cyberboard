@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html, body { @apply bg-cyber-bg text-cyber-text; }
+}
+
+@layer components {
+    .btn-primary   { @apply bg-violet-600 hover:bg-violet-700 text-white font-semibold px-4 py-2 rounded-lg transition text-sm; }
+    .btn-secondary { @apply bg-cyber-surface hover:bg-cyber-muted border border-cyber-border text-cyber-text font-semibold px-4 py-2 rounded-lg transition text-sm; }
+    .btn-danger    { @apply bg-red-900 hover:bg-red-800 border border-red-700 text-red-300 font-semibold px-4 py-2 rounded-lg transition text-sm; }
+    .card          { @apply bg-cyber-card border border-cyber-border rounded-xl; }
+    .input-dark    { @apply bg-cyber-surface border border-cyber-border text-cyber-text rounded-lg px-3 py-2 text-sm w-full focus:outline-none focus:border-violet-500 placeholder-cyber-dim; }
+    .label         { @apply block text-xs text-cyber-dim uppercase tracking-wider mb-1; }
+    .badge-cert    { @apply bg-indigo-950 text-indigo-300 border border-indigo-800 text-xs px-2 py-0.5 rounded; }
+    .badge-ctf     { @apply bg-emerald-950 text-emerald-300 border border-emerald-800 text-xs px-2 py-0.5 rounded; }
+    .badge-code    { @apply bg-amber-950 text-amber-300 border border-amber-800 text-xs px-2 py-0.5 rounded; }
+    .badge-web     { @apply bg-red-950 text-red-300 border border-red-800 text-xs px-2 py-0.5 rounded; }
+    .badge-know    { @apply bg-teal-950 text-teal-300 border border-teal-800 text-xs px-2 py-0.5 rounded; }
+    .badge-other   { @apply bg-cyber-surface text-cyber-dim border border-cyber-border text-xs px-2 py-0.5 rounded; }
+    .badge-critical{ @apply bg-red-950 text-red-400 border border-red-800 text-xs px-2 py-0.5 rounded; }
+    .badge-high    { @apply bg-amber-950 text-amber-400 border border-amber-800 text-xs px-2 py-0.5 rounded; }
+    .badge-medium  { @apply bg-emerald-950 text-emerald-400 border border-emerald-800 text-xs px-2 py-0.5 rounded; }
+    .badge-low     { @apply bg-cyber-surface text-cyber-dim border border-cyber-border text-xs px-2 py-0.5 rounded; }
+    .nav-item      { @apply flex items-center gap-2 px-3 py-2 rounded-lg text-sm text-cyber-dim hover:text-cyber-text hover:bg-cyber-surface transition cursor-pointer; }
+    .nav-item.active { @apply text-cyber-text bg-cyber-surface border-l-2 border-violet-500 rounded-l-none; }
+}

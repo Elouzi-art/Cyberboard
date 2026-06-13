@@ -33,7 +33,7 @@ juggling certifications, CTF challenges, coding projects, and web development si
 ## 🚀 Installation
 
 ```bash
-git clone https://github.com/TON_USERNAME/cyberboard.git
+git clone https://github.com/Elouzi-art/Cyberboard.git
 cd cyberboard
 composer install
 npm install && npm run build
@@ -44,6 +44,9 @@ php artisan key:generate
 Configurer `.env` :
 
 ```env
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
 DB_DATABASE=cyberboard
 DB_USERNAME=root
 DB_PASSWORD=
@@ -77,14 +80,73 @@ Password : password
 | `/export/csv` | Export CSV         |
 | `/export/pdf` | Export PDF         |
 
+## 💾 Backup & Restore
+
+Les données sont sauvegardées automatiquement dans OneDrive à chaque lancement.
+
+### Lancer l'application
+
+Double-click sur `start-cyberboard.bat` — démarre MySQL, fait un backup automatique vers OneDrive, puis lance le serveur Laravel.
+
+```
+http://127.0.0.1:8000
+```
+
+### Après un formatage PC
+
+**Prérequis à réinstaller :**
+
+- PHP 8.5+
+- MySQL 9.6+
+- Composer
+- Node.js 18+
+
+**Étapes de restauration :**
+
+```bash
+# 1. Cloner le repo
+git clone https://github.com/Elouzi-art/Cyberboard.git
+cd cyberboard
+
+# 2. Installer les dépendances
+composer install
+npm install && npm run build
+
+# 3. Configurer l'environnement
+cp .env.example .env
+php artisan key:generate
+# Editer .env avec les credentials MySQL
+
+# 4. Restaurer la base de données
+# Double-click restore-cyberboard.bat
+# Choisir le fichier .sql depuis OneDrive
+
+# 5. Lancer
+# Double-click start-cyberboard.bat
+```
+
+### Structure des backups OneDrive
+
+```
+C:\Users\paths\OneDrive\
+└── cyberboard-backups\
+    ├── cyberboard_20260613_120000.sql
+    ├── cyberboard_20260612_090000.sql
+    └── ...  (10 derniers conservés automatiquement)
+```
+
 ## 👤 Author
 
-**Solid** — IT Security Engineering Student ·
+**Solid** — IT Security Engineering Student · FST Marrakech 🇲🇦
 
 - 🏅 ISC² CC Certified
-- 🚩 CTF : PicoCTF
+- 🚩 CTF : PicoCTF · Hack The Box
 - 🔐 Loi 05-20 · Loi 08-09 · DNSSI
 
 ## 📄 License
 
 MIT
+
+git add README.md
+git commit -m "docs: add backup and restore documentation"
+git push

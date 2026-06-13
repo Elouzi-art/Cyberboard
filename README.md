@@ -58,7 +58,7 @@ php artisan serve
 ## 🔑 Demo account
 
 ```
-Email    : hagi@cyberboard.dev
+Email    : solid@cyberboard.dev
 Password : password
 ```
 
@@ -79,7 +79,7 @@ Password : password
 
 ## 👤 Author
 
-**Solid** — IT Security Engineering Student · FST Marrakech 🇲🇦
+**Solid** — IT Security Engineering Student ·
 
 - 🏅 ISC² CC Certified
 - 🚩 CTF : PicoCTF

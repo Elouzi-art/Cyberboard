@@ -147,6 +147,4 @@ C:\Users\paths\OneDrive\
 
 MIT
 
-git add README.md
-git commit -m "docs: add backup and restore documentation"
-git push
+

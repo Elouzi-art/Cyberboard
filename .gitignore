@@ -13,3 +13,7 @@ yarn-error.log
 /.fleet
 /.idea
 /.vscode
+start-cyberboard.bat
+restore-cyberboard.bat
+
+

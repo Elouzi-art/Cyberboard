@@ -79,11 +79,10 @@ Password : password
 
 ## 👤 Author
 
-**Hagi** — IT Security Engineering Student · FST Marrakech 🇲🇦
+**Solid** — IT Security Engineering Student · FST Marrakech 🇲🇦
 
 - 🏅 ISC² CC Certified
-- 🌐 Cisco NetAcad (CCNA)
-- 🚩 CTF : PicoCTF · Hack The Box
+- 🚩 CTF : PicoCTF
 - 🔐 Loi 05-20 · Loi 08-09 · DNSSI
 
 ## 📄 License

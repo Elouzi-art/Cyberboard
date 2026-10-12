@@ -2,6 +2,8 @@
 
 > Cyber Mission Control — Personal project manager for IT Security students
 
+> TL;DR: A dark-themed productivity dashboard for IT security students to track projects, tasks, certifications, CTFs, pomodoro work, and roadmap planning in one place.
+
 ![Laravel](https://img.shields.io/badge/Laravel-13-FF2D20?style=flat-square&logo=laravel&logoColor=white)
 ![PHP](https://img.shields.io/badge/PHP-8.5-777BB4?style=flat-square&logo=php&logoColor=white)
 ![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3-38BDF8?style=flat-square&logo=tailwindcss&logoColor=white)
@@ -146,5 +148,3 @@ C:\Users\paths\OneDrive\
 ## 📄 License
 
 MIT
-
-
